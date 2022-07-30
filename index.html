@@ -1,48 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CALCULATOR XD</title>
-    <script src="./script.js"></script>
+    <script src="./index.js"></script>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <section id="digitizer">
-    <h1>Basic Calculator</h1>
-    <br>
+    <center>
 
-    <h3>Digite...</h3>
-    <label for="digitizer"></label>
-    <input type="number" id="Digite..."/>
+        <form name="Basic Calculator">
 
-    </section>
+            <table border="3">
 
-    <section id="buttons-selection">
-       
+                <tr>
+                    <td colspan="4">
+                        <p id="result"></p>
+                    </td>
+                </tr>
 
-        <P>
-            <button id="button-7">7</button>
-            <button id="button-8">8</button>
-            <button id="button-9">9</button>
-            <button id="division-button">÷</button> <br>
-            <button id="button-4">4</button> 
-            <button id="button-5">5</button> 
-            <button id="button-6">6</button>
-            <button id="multiplication-button">x</button> <br>
-            <button id="button-1">1</button>
-            <button id="button-2">2</button>
-            <button id="button-3">3</button>
-            <button id="subtract-button">-</button> <br>
-            <button id="button-0">0</button>
-            <button id="point-button">.</button>
-            <button id="equality-button">=</button>
-            <button id="sum-button">+</button> <br>
-            <button id="reset-button">C</button> 
-        
-        </P>
+                <tr>
+                    <td><input type="button" value="7" id="seven"></td>
+                    <td><input type="button" value="8" id="eight"></td>
+                    <td><input type="button" value="9" id="nine"></td>
+                    <td><input type="button" value="÷" id="division"></td>
 
-    </section>
-    
+
+
+                </tr>
+
+                <tr>
+                    <td><input type="button" value="4" id="four"></td>
+                    <td><input type="button" value="5" id="five"></td>
+                    <td><input type="button" value="6" id="six"></td>
+                    <td><input type="button" value="*" id="multiplication"></td>
+
+
+                </tr>
+
+                <tr>
+                    <td><input type="button" value="1" id="one"></td>
+                    <td><input type="button" value="2" id="two"></td>
+                    <td><input type="button" value="3" id="three"></td>
+                    <td><input type="button" value="-" id="subtract"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" value="0" id="zero"></td>
+                    <td><input type="button" value="." id="decimal-point"></td>
+                    <td><input type="button" value="C" id="reset"></td>
+                    <td><input type="button" value="+" id="sum"></td>
+                </tr>
+
+                <td colspan="2"><input type="button" value="      =      " id="equals"></td>
+
+            </table>
+        </form>
+    </center>
 </body>
+
 </html>

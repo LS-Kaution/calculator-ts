@@ -4,7 +4,7 @@
     "target": "esnext",
     "module": "esnext",
     "lib": ["esnext", "DOM"],
-    "moduleResolution": "node",
+    "moduleResolution": "Node16",
     "esModuleInterop": true,
     "strict": true,
     "strictNullChecks": true,
