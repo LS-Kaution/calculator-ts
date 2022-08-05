@@ -22,7 +22,7 @@ let result = document.getElementById('result')
 
 for (const button of buttons) {
 	button?.addEventListener("click", () => {
-		result.value = result.value + button.value;
+		result.value += button.value;
 	});
 }
 
@@ -32,7 +32,7 @@ equalButton?.addEventListener("click", () => {
 	const operator = getOperator(result.value);
 	const [numOne, numTwo] = result.value.split(operator);
 
-	let results = operate(operator, numOne, numTwo);
+	let results = operate(operator, Number(numOne), Number(numTwo));
 	result.value = results;
 });
 
@@ -48,8 +48,6 @@ function getOperator(string) {
 }
 
 let resetButton = document.getElementById('reset')
-resetButton.addEventListener('click', resetGame)
-
-function resetGame() {
-	location.reload()
-}
+resetButton.addEventListener('click', () => {
+	result.value = ""
+})
